@@ -35,7 +35,7 @@ public class ThreadClass extends Thread {
 		
 		OnlineBusReservation.reserveSeats(numberOfSeats);
 		
-		sc.close();
+		
 		
 		
 		//Traversing list through Iterator  

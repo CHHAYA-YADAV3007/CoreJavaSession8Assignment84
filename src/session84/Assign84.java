@@ -25,9 +25,33 @@ public class Assign84 {
 	
 	public  static void main(String[] args){	
 	
-	       ThreadClass thr = new ThreadClass();
+	       ThreadClass thr1 = new ThreadClass();
 	
-	       thr.start();
+	       ThreadClass thr2 = new ThreadClass();
+	       
+	       thr1.start();
+	       
+	       try{
+	    	   
+	    	   thr1.join();
+	       }
+	       catch(Exception e){
+	    	   
+	    	   System.out.println(e);
+	       }
+	       
+	       
+	       thr2.start();
+	       
+	       try{
+	    	   
+	    	   thr2.join();
+	       }
+	       catch(Exception e){
+	    	   
+	    	   System.out.println(e);
+	       }
+	       
 
 	
 	}

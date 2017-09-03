@@ -4,7 +4,9 @@ public class OnlineBusReservation {
 	
 	public final static int TotalSeats = 20;
 	
-	public static int SeatsLeft  = 20 ;
+	private static int SeatsLeft  = 20 ;
+	
+//	public volatile int SeatsLeft  = 20;
 	
 	private String PassengerFirstName;
 	
